@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="bootstrap.min.css">
+<script src="angular.min.js"></script>
+</head>
+<body ng-app="myapp" ng-controller="myctrl">
+<div class="container">
+<p> This is a bootstrap test</p>
+<br>
+</div>
+<div class="container">
+<p> This is another test {{hole}}</p>
+<br>
+</div>
+
+<button class="btn btn-sucess"> CLICK</button>
+
+<script>
+var app = angular.module("myapp",[]);
+app.controller("myctrl",function($scope)
+	{
+		$scope.hole = "BB";
+	});
+</script>
+</body>
+</html>
+

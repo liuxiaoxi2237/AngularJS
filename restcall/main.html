@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="angular.min.js"></script>
+<script src="angular-base64.js"></script>
+</head>
+<body ng-app="myapp">
+<div ng-controller="myctrl">
+The value get from: <br>
+{{result}}
+<br>
+<br>
+
+CODE:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   <input type="text" name="id01" ng-model="code">
+<br>
+<br>
+ChangeRate: <input type="text" name="id02" ng-model="changerate">
+<br>
+<br>
+NetRate:&nbsp;&nbsp; <input type="text" name="id03" ng-model="netrate">
+<br>
+<br>
+PRICE:&nbsp;&nbsp;&nbsp;&nbsp; <input type="text" name="id04" ng-model="price">
+<br>
+<br>
+RANK:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="text" name="id05" ng-model="rank">
+<br>
+<br>
+<button ng-click="write()">WRITE</button>
+<br>
+<br>
+QUERYCODE: <input type="text" name="id05" ng-model="querycode">
+<br>
+<br>
+<button ng-click="read()">READ</button>
+<br>
+<br>
+</div>
+
+
+<script src="myctrl-auth.js"></script>
+</body>
+</html>
+

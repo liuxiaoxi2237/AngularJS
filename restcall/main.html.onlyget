@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="angular.min.js"></script>
+<script src="angular-base64.js"></script>
+</head>
+<body ng-app="myapp">
+<div ng-controller="myctrl">
+The value get from: <br>
+{{result}}
+<br>
+</div>
+<script src="myctrl-auth.js"></script>
+</body>
+</html>
+

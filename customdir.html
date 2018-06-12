@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="angular.min.js"></script>
+</head>
+
+<body ng-app="myapp">
+
+<div class="runbo"></div>
+
+
+<script>
+var app = angular.module("myapp",[]);
+app.directive("runbo", function() {
+	return {
+		restrict : "C",
+		template : "<h1> customized commonad</h1>"
+	};
+});
+</script>
+</body>
+</html>
+

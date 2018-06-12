@@ -1,0 +1,12 @@
+var app = angular.module('myapp',[]);
+var myheaders = btoa("user:password");
+var myhh = "Basic " + myheaders;
+var ar = "this";
+app.controller('myctrl', function($scope,$http) {
+	$http.get({
+		method: 'GET',
+		url: 'http://192.168.47.1:8080/hello'}).then
+		(function (response) {
+			$scope.result = response.data;});
+	});
+
